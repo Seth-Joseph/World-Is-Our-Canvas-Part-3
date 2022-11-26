@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>World is our Canvas</title>
+    <script src="p5.js"></script>
+    <script src="p5.dom.min.js"></script>
+    <script src="p5.sound.min.js"></script>
+    <script src="./p5.play.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.13.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.0/firebase-database.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+   https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="sketch.js"></script>
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyAeWZftur7uT8KdqP08RWNgclRFUCSd1FA",
+        authDomain: "worldiscanvas-f00e1.firebaseapp.com",
+        databaseURL: "https://worldiscanvas-f00e1-default-rtdb.firebaseio.com",
+        projectId: "worldiscanvas-f00e1",
+        storageBucket: "worldiscanvas-f00e1.appspot.com",
+        messagingSenderId: "427777379231",
+        appId: "1:427777379231:web:1d19975b6fcba24d1d8baa",
+        measurementId: "G-X9KXZCGV1P"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
+  </head>
+  <body>
+    <div id="canvascontainer"></div>
+    <div id="list">
+        <button id="saveButton">save</button>
+        <button id="clearButton">clear</button>
+      <ol id="drawinglist"></ol>
+    </div>
+  </body>
+</html>

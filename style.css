@@ -1,0 +1,19 @@
+html, body {
+  margin: 10;
+  padding: 0;
+}
+canvas {
+  display: block;
+  border: 3px solid;
+  
+}
+
+#canvascontainer{
+  float:left; 
+  width:75%;
+}
+#list{
+  float:right; 
+  width:25%;
+  margin-right: -100px;
+}
